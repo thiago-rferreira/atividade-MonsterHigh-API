@@ -3,6 +3,10 @@ const { monsters } = dados;
 
 const getAllMonsters = (req, res) => {
     let resultado = monsters;
+
+    // FILTROS AQUI
+
+    
     res.status(200).json({
         total: resultado.length,
         data: resultado
